@@ -29,10 +29,6 @@ class GameState():
                                                self.currentCastlingRight.wqs, self.currentCastlingRight.bqs,)]
 
 
-        # self.protects = [][]
-        # self.threatens = [][]
-        # self.squaresCanMoveTo = [][]
-
     # takes move as parameter and dose it not working with castling at pawn promotion and passant
     def makeMove(self, move): #this will make the move EX move to n col
         self.board[move.startRow][move.startCol] = "--" # after move leave original spot blank on board
