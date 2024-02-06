@@ -8,8 +8,8 @@ SmartMoveFinder: This is the AI bot that knows the best moves from board positio
 Main: this runs the code checks for input and has all the UI
 
 About BOT:
-this bot is smart i have mapped each spot on the board and given it a value based on how good i think it is,
-then i gave every piece a value based on how valuable it is, Then I have the game state this tells the bot 
+this bot is smart i have mapped each spot on the board and given it a value based on how good I think it is,
+then I gave every piece a value based on how valuable it is, Then I have the game state this tells the bot 
 what the board looks like its moves and its pieces under attack so it has all the knowledge it needs to make a move
 
 This BOT uses Algiorithims Like MinMax recursion NegaMax Alphabeta Pruning, and Dictionaries to effectively Pick a move 
@@ -21,5 +21,5 @@ But what if there is a game state or move that has the highest value For Ex what
 the bot knows from the value of pieces the queen is the best thing it can get then why even bother searching for more moves and more game states
 it already has the best move so the recursion stops and takes that move. 
 
-If you want to play this Just download the folder and run the main file.
-i will be uploading a EXE soon online. 
+If you want to play this download the folder and run the main file.
+I will be uploading an EXE online soon. 
