@@ -1,4 +1,4 @@
-# driver file (user input and game state) and determining the velid move
+# driver file (user input and game state) and determining the valid move
 
 import pygame as p
 import ChessEngine
