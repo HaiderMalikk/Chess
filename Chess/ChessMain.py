@@ -344,7 +344,7 @@ def drawEndGameText(screen, text):
     textObject = font.render(text, 0 , p.Color("Black"))
     screen.blit(textObject, textLocation.move(2,2))
 
-
+# runner
 if __name__ == "__main__":
     main()
     
