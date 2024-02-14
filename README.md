@@ -12,7 +12,7 @@ this bot is smart i have mapped each spot on the board and given it a value base
 then I gave every piece a value based on how valuable it is, Then I have the game state this tells the bot 
 what the board looks like its moves and its pieces under attack so it has all the knowledge it needs to make a move
 
-This BOT uses Algiorithims Like MinMax recursion NegaMax Alphabeta Pruning, and Dictionaries to effectively Pick a move 
+This BOT uses Algiorithims Like MinMax recursion NegaMax Alphabeta Pruning and greedy algorithms to effectively Pick a move 
 it will scan the board and look at every single move and every single state the board can be in as well as all the opponent moves. 
 During each of those recursions, it will use its knowledge of the board and pieces to choose the highest value move.
 
