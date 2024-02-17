@@ -1,4 +1,4 @@
-# Chess
+# Chess 123 133
 My Chess Game. Made with Pygame it can be played with another person or a Chess bot powered by powerful algorithms and data.
 
 About:
