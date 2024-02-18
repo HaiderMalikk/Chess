@@ -22,7 +22,7 @@ def showStartButton(screen):
     screen.blit(text, (335,412))
     return button_rect
 
-# UI
+# Start screen
 def showStartScreen(screen, playerOne, playerTwo): 
     
     screen.fill(p.Color("green"))
