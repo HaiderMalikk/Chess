@@ -7,7 +7,7 @@ Engine: the engine includes the board, rules, and moves a player can make includ
 SmartMoveFinder: This is the AI bot that knows the best moves from board position, piece value and Current game state
 Main: this runs the code checks for input and has all the UI
 
-About BOT:
+About Chess Engine:
 this bot is smart i have mapped each spot on the board and given it a value based on how good I think it is,
 then I gave every piece a value based on how valuable it is, Then I have the game state this tells the bot 
 what the board looks like its moves and its pieces under attack so it has all the knowledge it needs to make a move
