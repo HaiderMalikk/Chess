@@ -32,7 +32,7 @@ def showStartScreen(screen, playerOne, playerTwo):
     text_title = font_title.render("CHESS", True, p.Color("white"))
     screen.blit(text_title, ((BOARD_WIDTH + MOVE_LOG_PANEL_WIDTH - text_title.get_width()) // 2.5, 50))
 
-    illustration = p.image.load('images/wp.png')
+    illustration = p.image.load('Chess/images/wp.png')
     illustration = p.transform.scale(illustration, (85, 85))
     screen.blit(illustration, (BOARD_WIDTH / 2 - illustration.get_width() / 5 + 200, BOARD_HEIGHT / 8 - 10))
 
@@ -71,7 +71,7 @@ def showStartScreen(screen, playerOne, playerTwo):
 def loadImages():
     pieces = ['wp', 'wR', 'wN', 'wB', 'wQ', 'wK', 'bp', 'bR', 'bN', 'bB', 'bQ', 'bK']
     for piece in pieces:
-        IMAGES[piece] = p.transform.scale(p.image.load("images/" + piece + ".png"), (SQ_SIZE, SQ_SIZE))
+        IMAGES[piece] = p.transform.scale(p.image.load("Chess/images/" + piece + ".png"), (SQ_SIZE, SQ_SIZE))
 
 # main driver for input and graphics 
 def main():
