@@ -8,7 +8,7 @@ About: This chess game has 3 files:
 - SmartMoveFinder: This is the AI bot that determines the best moves based on board position, piece value, and the current game state.
 - Main: This runs the code, checks for input, and handles all the UI.
 
-About Chess Engine: This bot is smart! I have mapped each spot on the board and assigned it a value based on how good I think it is. Each piece is given a value based on its importance. The game state informs the bot of the board layout, its moves, and pieces under attack, giving it all the knowledge it needs to make a move.
+About Chess Bot: This bot is smart! I have mapped each spot on the board and assigned it a value based on how good I think it is inside the chess engine. Each piece is given a value based on its importance. The game state informs the bot of the board layout, its moves, and pieces under attack, giving it all the knowledge it needs to make a move.
 
 This bot uses algorithms like MinMax recursion, NegaMax, Alpha-Beta Pruning, and greedy algorithms to effectively pick a move. It scans the board, evaluates every move, considers every possible state the board can be in, and assesses all opponent moves. During each recursion, it uses its knowledge of the board and pieces to choose the highest-value move.
 
