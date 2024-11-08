@@ -14,7 +14,7 @@ This bot uses algorithms like MinMax recursion, NegaMax, Alpha-Beta Pruning, and
 
 One thing that makes this bot fast and efficient is Alpha-Beta Pruning. Earlier, I mentioned that the bot looks at every move and game state. But what if there's a move or game state that has the highest value? For example, if one move allows the bot to capture a queen with a pawn or capture a pawn with a pawn, the bot knows from piece values that capturing the queen is the best move. It stops searching for more moves and game states and takes that move immediately.
 
-If you want to play, download the folder and run the main file. NOTE: You must change the image file path if you're on Windows, and you need Pygame installed in your Python workspace. OK, BYEE!
+If you want to play, download the folder and run the main file. NOTE: you need Pygame installed in your Python workspace just use pip install pygame in you terminal, go get pip just do python3 i pip but this might vary. OK, BYEE!
 
 - Here are some pics of the game PLZ NOTE: all the effort was for the back end!
 - Here is the link to the live demo: https://www.youtube.com/watch?v=lJkVwCNmqOE
