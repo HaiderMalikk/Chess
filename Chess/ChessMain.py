@@ -6,7 +6,7 @@ import SmartMoveFinder
 from multiprocessing import Process, Queue
 
 BOARD_WIDTH = BOARD_HEIGHT = 512
-MOVE_LOG_PANEL_WIDTH = 250
+MOVE_LOG_PANEL_WIDTH = 200
 MOVE_LOGPANEL_HEIGHT = BOARD_HEIGHT
 DIMENTION = 8
 SQ_SIZE = BOARD_HEIGHT // DIMENTION
@@ -289,14 +289,14 @@ def drawMoveLog(screen, gs, font):
             moveString += str(moveLog[i+1]) + "  "
         moveTexts.append(moveString)
                                         
-    movesPerRow = 3
+    movesPerRow = 2
     padding = 5
     lineSpacing = 2
     textY = padding + 40
     # movelog titel
     font_titleml = p.font.SysFont("Arial", 20, True, False)
     text_titleml = font_titleml.render("MOVE LOG", True, p.Color("white"))
-    screen.blit(text_titleml, (580, 10))
+    screen.blit(text_titleml, (555, 10))
     # move log 
     for i in range(0, len(moveTexts), movesPerRow):
         text = ""

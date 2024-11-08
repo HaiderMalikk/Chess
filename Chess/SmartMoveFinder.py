@@ -1,4 +1,4 @@
-# randome move from valid moves
+# random move from valid moves NOTE: this is not just getting a random move rather helping the game feel less predictable
 import random
 
 # piece rankings and numbers
@@ -69,10 +69,8 @@ STALEMATE = 0 # better than losing (+ val = white winning, - val = black winning
 # can change to make better depth means how many moves to look ahead the higher the better but slower 
 DEPTH = 2 # keep 1-3
 
-def findRandomMove(validMoves):
-    return validMoves[random.randint(0 ,len(validMoves)-1)]
 
-# findbest move helps with find best move min max but is not called in the game
+# findbest move helps with find best move min max but is not called in the game rather used before to game to get best moves while nega max uses recution in game at every move to get best move
 def findBestMoveMinMaxNoRecurtion(gs, validMoves): # greedy algrorithim/ minmax 
     # turn mulriplyer checks blacks turn of white turn to see if too maximise or minimize score
     turnMulriplier = 1 if gs.whiteToMove else -1
@@ -115,7 +113,7 @@ def findBestMove(gs, validMoves, returnQueue): #helper method to help us first c
     # findMoveNegaMax(gs, validMoves, DEPTH, 1 if gs.whiteToMove else -1)
     counter = 0
     findMoveNegaMaxAlphaBeta(gs, validMoves, DEPTH, -CHECKMATE, CHECKMATE, 1 if gs.whiteToMove else -1)
-    print(counter) # print how many times method is called ex how many states pos is runnign in
+    print(f"Checked {counter} moves to find best move") # print how many times method is called ex how many states pos is runnign in
     returnQueue.put(nextMove)
 
 def findMoveMinMax(gs, validMoves, depth, whiteToMove): # min max recurtion
@@ -185,7 +183,7 @@ def findMoveNegaMaxAlphaBeta(gs, validMoves, depth, alpha, beta, turnMulriplier)
             maxScore = score
             if depth == DEPTH:
                 nextMove = move
-                print(move, score)
+                print(f"move: {move}, score from this move: {score}")
         gs.undoMove()
         if maxScore > alpha: # pruning
             alpha = maxScore
